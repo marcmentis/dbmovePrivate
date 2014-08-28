@@ -1,0 +1,31 @@
+development:
+  adapter: <%= CONFIG[:adapter] %>
+  database: <%= CONFIG[:database] %>
+  pool: <%= CONFIG[:pool] %>
+  timeout: <%= CONFIG[:timeout] %>
+
+# For Legacy Database
+# development_sec: 
+#   adapter: <%= CONFIG[:adapter_sec] %>
+#   database: <%= CONFIG[:database_sec] %>
+#   username: <%= CONFIG[:username_sec] %>
+#   password: <%= CONFIG[:password_sec] %>
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000 
+
+production: 
+  adapter: <%= CONFIG[:adapter] %>
+  database: <%= CONFIG[:database] %>
+  username: <%= CONFIG[:username] %>
+  password: <%= CONFIG[:password] %>
+
+# For Legacy Database
+production_sec:
+  adapter: <%= CONFIG[:adapter_sec] %>
+  database: <%= CONFIG[:database_sec] %>
+  username: <%= CONFIG[:username_sec] %>
+  password: <%= CONFIG[:password_sec] %>
