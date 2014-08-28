@@ -1,10 +1,40 @@
 source 'https://rubygems.org'
+# ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# DEVELOPMENT
+group :development do
+  gem 'sqlite3', '1.3.8'
+  gem 'rspec-rails', '2.13.1'
+end
+
+# Use Oracle in development i.e., primary or legacy db's
+# group :development do
+#   gem "activerecord-oracle_enhanced-adapter", "~> 1.5.0"
+#   gem 'ruby-oci8', '~> 2.1.0'
+#   gem 'rspec-rails', '2.13.1'
+# end
+
+
+# TEST
+# group :test do
+#   gem 'selenium-webdriver', '2.35.1'
+#   gem 'capybara', '2.1.0'
+#   gem 'spork-rails', '4.0.0'
+# end
+
+
+# PRODUCTION
+# group :production do
+#   gem 'sqlite3', '1.3.8'
+# end
+
+group :production do
+  gem "activerecord-oracle_enhanced-adapter", "~> 1.5.0"
+  gem 'ruby-oci8', '~> 2.1.0'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
