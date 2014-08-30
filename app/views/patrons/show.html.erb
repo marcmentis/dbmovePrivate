@@ -10,5 +10,10 @@
   <%= @patron.last_name %>
 </p>
 
+<p>
+  <strong>Comment:</strong>
+  <%= @patron.comment %>
+</p>
+
 <%= link_to 'Edit', edit_patron_path(@patron) %> |
 <%= link_to 'Back', patrons_path %>
