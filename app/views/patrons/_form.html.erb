@@ -20,8 +20,12 @@
     <%= f.text_field :last_name %>
   </div>
   <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
     <%= f.label :comment %><br>
-    <%= f.text_field :comment %>
+    <%= f.text_area :comment %>
   </div>
   <div class="actions">
     <%= f.submit %>

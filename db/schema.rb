@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140830203644) do
+ActiveRecord::Schema.define(version: 20140830213334) do
 
   create_table "patrons", force: true do |t|
     t.string   "first_name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20140830203644) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "comment"
+    t.string   "phone"
   end
 
 end

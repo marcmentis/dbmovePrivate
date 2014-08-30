@@ -5,8 +5,8 @@
     <tr>
       <th>First name</th>
       <th>Last name</th>
+      <th>Phone</th>
       <th>Comment</th>
-      <th></th>
       <th></th>
     </tr>
   </thead>
@@ -16,6 +16,7 @@
       <tr>
         <td><%= patron.first_name %></td>
         <td><%= patron.last_name %></td>
+        <td><%= patron.phone %></td>
         <td><%= patron.comment %></td>
         <td><%= link_to 'Show', patron %></td>
         <td><%= link_to 'Edit', edit_patron_path(patron) %></td>
